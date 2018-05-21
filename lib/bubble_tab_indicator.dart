@@ -14,7 +14,6 @@ import 'package:flutter/widgets.dart';
 /// The selected tab bubble is applied padding by [padding] when [tabBarIndicatorSize] is label.
 
 class BubbleTabIndicator extends Decoration {
-
   final double indicatorHeight;
   final Color indicatorColor;
   final double indicatorRadius;
@@ -29,7 +28,11 @@ class BubbleTabIndicator extends Decoration {
     this.tabBarIndicatorSize = TabBarIndicatorSize.label,
     this.padding: const EdgeInsets.symmetric(vertical: 2.0, horizontal: 8.0),
     this.insets: const EdgeInsets.symmetric(horizontal: 5.0),
-  }) : assert(indicatorHeight != null), assert(indicatorColor != null), assert(indicatorRadius != null), assert(padding!= null), assert(insets!= null);
+  })  : assert(indicatorHeight != null),
+        assert(indicatorColor != null),
+        assert(indicatorRadius != null),
+        assert(padding != null),
+        assert(insets != null);
 
   @override
   Decoration lerpFrom(Decoration a, double t) {
@@ -61,7 +64,8 @@ class BubbleTabIndicator extends Decoration {
 
 class _BubblePainter extends BoxPainter {
   _BubblePainter(this.decoration, VoidCallback onChanged)
-      : assert(decoration != null), super(onChanged);
+      : assert(decoration != null),
+        super(onChanged);
 
   final BubbleTabIndicator decoration;
 
@@ -78,7 +82,7 @@ class _BubblePainter extends BoxPainter {
 
     Rect indicator = padding.resolve(textDirection).inflateRect(rect);
 
-    if(tabBarIndicatorSize == TabBarIndicatorSize.tab) {
+    if (tabBarIndicatorSize == TabBarIndicatorSize.tab) {
       indicator = insets.resolve(textDirection).deflateRect(rect);
     }
 
@@ -88,19 +92,22 @@ class _BubblePainter extends BoxPainter {
       indicator.width,
       indicator.height,
     );
-
   }
 
   @override
   void paint(Canvas canvas, Offset offset, ImageConfiguration configuration) {
     assert(configuration != null);
     assert(configuration.size != null);
-    final Rect rect = Offset(offset.dx, (configuration.size.height/2)-indicatorHeight/2) & Size(configuration.size.width, indicatorHeight);
+    final Rect rect = Offset(
+            offset.dx, (configuration.size.height / 2) - indicatorHeight / 2) &
+        Size(configuration.size.width, indicatorHeight);
     final TextDirection textDirection = configuration.textDirection;
     final Rect indicator = _indicatorRectFor(rect, textDirection);
     final Paint paint = Paint();
     paint.color = indicatorColor;
     paint.style = PaintingStyle.fill;
-    canvas.drawRRect(RRect.fromRectAndRadius(indicator, Radius.circular(indicatorRadius)), paint);
+    canvas.drawRRect(
+        RRect.fromRectAndRadius(indicator, Radius.circular(indicatorRadius)),
+        paint);
   }
 }

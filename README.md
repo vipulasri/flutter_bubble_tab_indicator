@@ -1,14 +1,17 @@
-# Flutter Bubble Tab Indicator
+# Bubble Tab Indicator
+
+[![pub package](https://img.shields.io/pub/v/bubble_tab_indicator.svg)](https://pub.dartlang.org/packages/bubble_tab_indicator)
 
 A Flutter library to add bubble tab indicator to TabBar.
+
+[![banner](https://img.shields.io/pub/v/bubble_tab_indicator.svg)](images/banner.jpg)
 
 ## Getting Started
 
 Add package from github by adding the following to your pubspec.yaml, pub publication is added later.
 ````
-  bubble_tab_indicator:
-    git:
-      url: https://github.com/vipulasri/flutter_bubble_tab_indicator.git
+  dependencies:
+    bubble_tab_indicator: "^0.1.1"
 ````
 Import the library in your file:
 ````
