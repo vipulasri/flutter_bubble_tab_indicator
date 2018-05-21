@@ -1,6 +1,6 @@
 name: bubble_tab_indicator
 description: A Flutter library to add bubble tab indicator to TabBar
-version: 0.1.1
+version: 0.1.2
 author: Vipul Asri <vipulasri.2007@gmail.com>
 homepage: https://github.com/vipulasri/flutter_bubble_tab_indicator
 

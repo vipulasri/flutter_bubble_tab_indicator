@@ -1,4 +1,7 @@
 
+## 0.1.2
+* Updated Readme and screenshot
+
 ## 0.1.1
 * Updated Readme and some code formatting
 
