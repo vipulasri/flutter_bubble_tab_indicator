@@ -4,7 +4,7 @@
 
 A Flutter library to add bubble tab indicator to TabBar.
 
-[![banner](https://img.shields.io/pub/v/bubble_tab_indicator.svg)](images/banner.jpg)
+![banner](images/banner.jpg)
 
 ## Getting Started
 
