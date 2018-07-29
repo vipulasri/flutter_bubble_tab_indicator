@@ -1,3 +1,5 @@
+## 0.1.3
+* Updated library to support dart v2
 
 ## 0.1.2
 * Updated Readme and screenshot
