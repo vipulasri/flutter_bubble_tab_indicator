@@ -1,3 +1,6 @@
+## 0.1.4
+* Updated library description
+
 ## 0.1.3
 * Updated library to support dart v2
 

@@ -11,7 +11,7 @@ A Flutter library to add bubble tab indicator to TabBar.
 Add package from github by adding the following to your pubspec.yaml, pub publication is added later.
 ````
   dependencies:
-    bubble_tab_indicator: "^0.1.3"
+    bubble_tab_indicator: "^0.1.4"
 ````
 Import the library in your file:
 ````
