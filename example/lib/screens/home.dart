@@ -1,11 +1,9 @@
-
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:bubble_tab_indicator/bubble_tab_indicator.dart';
 
 class HomeScreen extends StatefulWidget {
-
-  HomeScreen({Key key}) : super(key: key);
+  HomeScreen({Key? key}) : super(key: key);
 
   @override
   State<StatefulWidget> createState() {
@@ -13,15 +11,15 @@ class HomeScreen extends StatefulWidget {
   }
 }
 
-class HomeWidgetState extends State<HomeScreen> with SingleTickerProviderStateMixin{
-
+class HomeWidgetState extends State<HomeScreen>
+    with SingleTickerProviderStateMixin {
   final List<Tab> tabs = <Tab>[
     new Tab(text: "Featured"),
     new Tab(text: "Popular"),
     new Tab(text: "Latest")
   ];
 
-  TabController _tabController;
+  TabController? _tabController;
 
   @override
   void initState() {
@@ -31,13 +29,12 @@ class HomeWidgetState extends State<HomeScreen> with SingleTickerProviderStateMi
 
   @override
   void dispose() {
-    _tabController.dispose();
+    _tabController!.dispose();
     super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
-
     return new Scaffold(
       appBar: new AppBar(
         title: Text('Bubble Tab Indicator'),
@@ -60,12 +57,9 @@ class HomeWidgetState extends State<HomeScreen> with SingleTickerProviderStateMi
         children: tabs.map((Tab tab) {
           return new Center(
               child: new Text(
-                tab.text,
-                style: new TextStyle(
-                  fontSize: 20.0
-                ),
-              )
-          );
+            tab.text!,
+            style: new TextStyle(fontSize: 20.0),
+          ));
         }).toList(),
       ),
     );

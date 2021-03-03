@@ -1,13 +1,13 @@
-
 import 'package:flutter/material.dart';
-import 'package:example/screens/home.dart';
+
+import 'screens/home.dart';
 
 class CustomTabApp extends MaterialApp {
   CustomTabApp()
       : super(
           debugShowCheckedModeBanner: false,
           title: 'Artisto',
-          home: new HomeScreen(),
+          home: HomeScreen(),
           theme: appTheme,
         );
 }
