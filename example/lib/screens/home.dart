@@ -47,6 +47,10 @@ class HomeWidgetState extends State<HomeScreen>
             indicatorHeight: 25.0,
             indicatorColor: Colors.blueAccent,
             tabBarIndicatorSize: TabBarIndicatorSize.tab,
+            // Other flags
+            // indicatorRadius: 1,
+            // insets: EdgeInsets.all(1),
+            // padding: EdgeInsets.all(10)
           ),
           tabs: tabs,
           controller: _tabController,
