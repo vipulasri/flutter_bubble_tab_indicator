@@ -1,5 +1,6 @@
 ## 0.1.5
 * Migrated to null-safety
+* AndroidX compatible
 
 ## 0.1.4
 * Updated library description
