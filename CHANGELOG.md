@@ -1,3 +1,6 @@
+## 0.1.5
+* Migrated to null-safety
+
 ## 0.1.4
 * Updated library description
 

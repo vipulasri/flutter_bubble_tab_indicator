@@ -1,8 +1,11 @@
 name: bubble_tab_indicator
 description: A Flutter library to add bubble-like effect to tab indicator to TabBar.
-version: 0.1.4
+version: 0.1.5
 author: Vipul Asri <vipulasri.2007@gmail.com>
 homepage: https://github.com/vipulasri/flutter_bubble_tab_indicator
+
+environment:
+  sdk: '>=2.12.0 <3.0.0'
 
 dependencies:
   flutter:
@@ -11,6 +14,3 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
-environment:
-  sdk: '>=1.23.0 <3.0.0'
