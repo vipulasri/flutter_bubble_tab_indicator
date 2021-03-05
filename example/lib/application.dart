@@ -6,7 +6,7 @@ class CustomTabApp extends MaterialApp {
   CustomTabApp()
       : super(
           debugShowCheckedModeBanner: false,
-          title: 'Artisto',
+          title: 'Bubble Tab Indicator ',
           home: HomeScreen(),
           theme: appTheme,
         );
