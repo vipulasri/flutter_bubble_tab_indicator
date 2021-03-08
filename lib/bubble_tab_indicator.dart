@@ -59,8 +59,7 @@ class BubbleTabIndicator extends Decoration {
 }
 
 class _BubblePainter extends BoxPainter {
-  _BubblePainter(this.decoration, VoidCallback? onChanged)
-      : super(onChanged);
+  _BubblePainter(this.decoration, VoidCallback? onChanged) : super(onChanged);
 
   final BubbleTabIndicator decoration;
 
@@ -72,8 +71,6 @@ class _BubblePainter extends BoxPainter {
   TabBarIndicatorSize get tabBarIndicatorSize => decoration.tabBarIndicatorSize;
 
   Rect _indicatorRectFor(Rect rect, TextDirection textDirection) {
-
-
     Rect indicator = padding.resolve(textDirection).inflateRect(rect);
 
     if (tabBarIndicatorSize == TabBarIndicatorSize.tab) {
@@ -90,7 +87,6 @@ class _BubblePainter extends BoxPainter {
 
   @override
   void paint(Canvas canvas, Offset offset, ImageConfiguration configuration) {
-
     assert(configuration.size != null);
     final Rect rect = Offset(
             offset.dx, (configuration.size!.height / 2) - indicatorHeight / 2) &
