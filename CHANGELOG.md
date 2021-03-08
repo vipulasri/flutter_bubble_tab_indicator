@@ -1,3 +1,6 @@
+## 0.1.6
+* dartfmt code formatting
+
 ## 0.1.5
 * Migrated to null-safety
 * AndroidX compatible
